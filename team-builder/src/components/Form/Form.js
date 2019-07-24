@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Form = ({ addMember }) => {
-  // Setting up state
   const [member, setMember] = React.useState({
     name: '',
     email: '',
@@ -24,19 +23,19 @@ const Form = ({ addMember }) => {
         <label>
           Name
           <div>
-            <input name='name' onChange={(change) => handleChange(change)} />
+            <input name='name' placeholder='Name' onChange={(change) => handleChange(change)} />
           </div>
         </label>
         <label>
           Email
           <div>
-            <input name='email' onChange={(change) => handleChange(change)} />
+            <input name='email' placeholder='Email' onChange={(change) => handleChange(change)} />
           </div>
         </label>
         <label>
           Role
           <div>
-            <input name='name' onChange={(change) => handleChange(change)} />
+            <input name='name' placeholder='Role' onChange={(change) => handleChange(change)} />
           </div>
         </label>
       </form>
