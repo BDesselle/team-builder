@@ -19,6 +19,7 @@ const Form = ({ addMember }) => {
 
   return (
     <React.Fragment>
+      <h3>Create A Team Member</h3>
       <form onSubmit={handleSubmit}>
         <label>
           Name
@@ -35,9 +36,18 @@ const Form = ({ addMember }) => {
         <label>
           Role
           <div>
-            <input name='name' placeholder='Role' onChange={(change) => handleChange(change)} />
+            <select name='name' placeholder='Role' onChange={(change) => handleChange(change)}>
+              <option value="fsDev">Fullstack Developer</option>
+              <option value="beDev">Backend Developer</option>
+              <option value="feDev">Frontend Developer</option>
+              <option value="uiux">UI/UX Designer</option>
+            </select>
           </div>
         </label>
+        <br></br>
+        <div>
+          <input type="submit" value="Submit" />
+        </div>
       </form>
     </React.Fragment>
   );
